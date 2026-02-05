@@ -18,7 +18,7 @@ variable "public_subnet_cidr" {
 }
 
 variable "availability_zone" {
-  default = "ap-south-1a"
+  default = "us-east-1a"
 }
 
 variable "vpc_name" {
