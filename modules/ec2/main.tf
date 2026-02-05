@@ -45,7 +45,7 @@ resource "aws_security_group" "this" {
 
 
 resource "aws_instance" "this" {
-  ami                    = "ami-0532be01f26a3de55" # Amazon Linux 2 (ap-south-1)
+  ami                    = "ami-0532be01f26a3de55" 
   instance_type          = var.instance_type
   key_name               = aws_key_pair.this.key_name
   vpc_security_group_ids = [aws_security_group.this.id]
